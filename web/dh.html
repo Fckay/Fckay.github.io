@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>跳转中</title>
+<style type="text/css">
+<!--
+body{height: 80vh;display:flex;background-color:#222a30;flex-direction:column;align-items:center;justify-content:center;}
+.min,.mini{color:#fff;text-indent:12px;letter-spacing:12px;font-size:100px;font-family:Cabin,sans-serif;-webkit-animation:colorText 5s ease-out infinite,nudgeText 5s ease-out infinite;animation:colorText 5s ease-out infinite,nudgeText 5s ease-out infinite;}
+.mini{font-size:14px;}
+.btn{display:inline-block;margin-top:50px;padding:5px 10px;border:1px solid #fff;color:#fff;text-decoration:none;}
+@-webkit-keyframes colorText{21%{color:#4e5559;}
+30%{color:#fff;}
+51%{color:#4e5559;}
+60%{color:#fff;}
+81%{color:#4e5559;}
+90%{color:#fff;}
+}
+@keyframes colorText{21%{color:#4e5559;}
+30%{color:#fff;}
+51%{color:#4e5559;}
+60%{color:#fff;}
+81%{color:#4e5559;}
+90%{color:#fff;}
+}
+-->
+</style>
+</head>
+<body>
+<div class="min">跳转页</div>
+<div class="mini">永远相信美好的事情即将发生</div>
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="20%">
+
+<form name=loading>
+<td align=center>
+<p><font color=gray>正在为您载入页面请稍候……</font></p>
+<p>
+<input type=text name=chart size=46 style="font-family:Arial;
+font-weight:bolder; color:gray;
+background-color:white; padding:0px; border-style:none;">
+<br>
+<input type=text name=percent size=46 style="font-family:Arial;
+color:gray; text-align:center;
+border-width:medium; border-style:none;">
+<script>var bar = 0
+var line = "||"
+var amount ="||"
+count()
+function count(){
+bar= bar+2
+amount =amount + line
+document.loading.chart.value=amount
+document.loading.percent.value=bar+"%"
+if (bar<99)
+{setTimeout("count()",100);}
+else
+{window.location = "https://www.dnzs114.cn/";}
+}
+</script>
+</p>
+</td>
+</form>
+</tr>
+</table>
+<a class="btn" href="#">联系站长</a>
+</body>
+</html>
