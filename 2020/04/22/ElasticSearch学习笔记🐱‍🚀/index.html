@@ -9,19 +9,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Ckay&#39;s blog</title>
+  <title>ElasticSearch学习笔记🐱‍🚀 | Ckay&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="久忆博客">
-<meta name="keywords" content="久忆||久忆博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ckay&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="创建索引               获得索引的具体信息">
+<meta name="keywords" content="-ElasticSearch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ElasticSearch学习笔记🐱‍🚀">
+<meta property="og:url" content="http://yoursite.com/2020/04/22/ElasticSearch学习笔记🐱‍🚀/index.html">
 <meta property="og:site_name" content="Ckay&#39;s blog">
-<meta property="og:description" content="久忆博客">
+<meta property="og:description" content="创建索引               获得索引的具体信息">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587306069727.png">
+<meta property="og:image" content="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587306163130.png">
+<meta property="og:image" content="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587307406843.png">
+<meta property="og:image" content="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587307448186.png">
+<meta property="og:updated_time" content="2020-07-01T16:00:40.250Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ckay&#39;s blog">
-<meta name="twitter:description" content="久忆博客">
+<meta name="twitter:title" content="ElasticSearch学习笔记🐱‍🚀">
+<meta name="twitter:description" content="创建索引               获得索引的具体信息">
+<meta name="twitter:image" content="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587306069727.png">
   
     <link rel="alternative" href="/atom.xml" title="Ckay&#39;s blog" type="application/atom+xml">
   
@@ -167,325 +173,227 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-ElasticSearch学习笔记🐱‍🚀" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ElasticSearch学习笔记🐱‍🚀
+    </h1>
+  
+
+        
+        <a href="/2020/04/22/ElasticSearch学习笔记🐱‍🚀/" class="archive-article-date">
+  	<time datetime="2020-04-22T03:21:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-22</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h3><p><img src="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587306069727.png" alt="img">              </p>
+<h3 id="获得索引的具体信息"><a href="#获得索引的具体信息" class="headerlink" title="获得索引的具体信息"></a>获得索引的具体信息</h3><p><img src="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587306163130.png" alt="img">               </p>
+<a id="more"></a>
+
+<h3 id="更新数据"><a href="#更新数据" class="headerlink" title="更新数据"></a>更新数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">POST localhost:port/index/_doc/_update</span><br><span class="line"></span><br><span class="line"> &#123;</span><br><span class="line"></span><br><span class="line">   &quot;doc&quot;:&#123;</span><br><span class="line"></span><br><span class="line">       &quot;key&quot;:&quot;value&quot;</span><br><span class="line"></span><br><span class="line">      &#125; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h3><p><img src="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587307406843.png" alt="img"></p>
+<p>删除索引 </p>
+<p><img src="https://assets.baklib.com/97c001ce-31a1-4929-8cd8-0f0c630b0e6b/image1587307448186.png" alt="img"></p>
+<p>删除指定id的数据              </p>
+<h3 id="一些命令"><a href="#一些命令" class="headerlink" title="一些命令"></a>一些命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">localhost:port/users/_doc/_search?pretty&amp;scroll=5m&amp;size=1000</span><br><span class="line"></span><br><span class="line"> port -端口 </span><br><span class="line"></span><br><span class="line">users -索引</span><br><span class="line"></span><br><span class="line"> _doc -默认的type</span><br><span class="line"></span><br><span class="line"> scroll=5m -有效时间5分钟 </span><br><span class="line"></span><br><span class="line">size=1000 -显示一千条数据</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">localhost:port/_search/scroll？scroll=2m&amp;pretty&amp;scroll_id=DXF1ZXJ5QW5kRmV0Y2gBAAAAAAAC6GkWRVEyS3BuY2pUUld2bEU4d2h1Ym1qdw== scroll_id -</span><br><span class="line"></span><br><span class="line">上条命令的id</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://ckay.ml/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://ckay.ml/img/wx.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/22/简单Ngrok 实现内网穿透/" class="archive-article-date">
-  	<time datetime="2019-11-22T08:10:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/22/简单Ngrok 实现内网穿透/">简单Ngrok 实现内网穿透</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-Ngrok</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-ElasticSearch</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/22/ElasticSearch学习笔记🐱‍🚀/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/21/Hexo同时部署在GitHub+Coding/" class="archive-article-date">
-  	<time datetime="2019-11-20T16:10:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-21</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/04/25/Kibana的安装和配置的小坑🤒/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Kibana的安装和配置的小坑🤒
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/22/Python学习笔记🐛/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python学习笔记🐛</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/21/Hexo同时部署在GitHub+Coding/">Hexo同时部署在GitHub+Coding</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/17/Windows 下 7 行命令设置 Java 环境变量/" class="archive-article-date">
-  	<time datetime="2019-11-17T06:38:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/17/Windows 下 7 行命令设置 Java 环境变量/">Windows 下 7 行命令设置 Java 环境变量</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/现在的你还有没有真正快乐过？/" class="archive-article-date">
-  	<time datetime="2019-10-23T13:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/现在的你还有没有真正快乐过？/">现在的你还有没真正的快乐过？</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/01/生日快乐！/" class="archive-article-date">
-  	<time datetime="2019-10-01T13:21:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/01/生日快乐！/">生日快乐！</a>
-    </h1>
-  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "zsPa7hNdzOeTjPCsQhVGMbeh-MdYXbMMI",
+            app_key: "xW4t4GO15wyMBL6XscmqQVwd",
+            placeholder: "😃Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
+  </section>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/08/Hello world/" class="archive-article-date">
-  	<time datetime="2019-09-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/08/Hello world/">你好，世界！</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/12/不想联系，就算了/" class="archive-article-date">
-  	<time datetime="2019-08-12T07:25:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/12/不想联系，就算了/">不想联系，就算了</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/07/真正有本事的人，渐渐从朋友圈里消失了/" class="archive-article-date">
-  	<time datetime="2019-08-07T08:21:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/07/真正有本事的人，渐渐从朋友圈里消失了/">真正有本事的人，渐渐从朋友圈里消失了</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -595,8 +503,8 @@ setTimeout(showsectime, 1000);
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
